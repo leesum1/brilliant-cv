@@ -7,16 +7,18 @@
 #cvSection("技能与兴趣")
 
 #cvSkill(
-  type: [语言],
-  info: [英语 #hBar() 法语 #hBar() 中文],
+  type: [开发技能],
+  info: [熟练使用 Linux 系统(使用 Linux 作为日常主力操作系统) #hBar() 阅读英文文档/手册],
 )
 
 #cvSkill(
   type: [技术栈],
-  info: [Tableau #hBar() Python (Pandas/Numpy) #hBar() PostgreSQL],
+  info: [芯片前端设计 #hBar() 嵌入式 BSP 开发 #hBar() 操作系统移植 #hBar() 软件开发],
 )
 
 #cvSkill(
-  type: [个人兴趣],
-  info: [游泳 #hBar() 烹饪 #hBar() 阅读],
+  type: [编程语言],
+  info: [C/C++ #hBar() RUST #hBar() Scala/Chisel  #hBar() Verilog/SystemVerilog  #hBar() Python ],
 )
+
+

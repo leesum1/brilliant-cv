@@ -7,23 +7,13 @@
 #let cvEntry = cvEntry.with(metadata: metadata)
 
 
-
-
-
-
-
-
-
-
-
-
 #cvSection("项目经历")
 
 #cvEntry(
   society: [一生一芯-第四期],
-  title: link("https://docs.qq.com/sheet/DY0tRa2hMdUh1aXdD?tab=BB08J2")[#fa-icon("link")学习记录] + "  |  "    + 
+  title: link("https://docs.qq.com/sheet/DY0tRa2hMdUh1aXdD?tab=BB08J2")[#fa-icon("link")学习记录 #hBar() ]     + 
          link("https://ysyx.oscc.cc/project/intro-past.html#%E7%AC%AC%E5%9B%9B%E6%9C%9F")[#fa-icon("link")流片认证],
-  date: [2018.6 - 2018.11],
+  date: [2022.6 - 2022.11],
   location: [学号：ysyx_22041514],
   description: list(
     [使用 Verilog 设计 RISCV64IM 指令集、M U 特权模式的经典 5 级流水线处理器 NPC，支持 ICache、DCache 、静态分支预测、AXI4 总线],
@@ -36,7 +26,7 @@
 #cvEntry(
   society: link("https://github.com/leesum1/RV64emu-rs")[RV64emu-rs],
   title: link("https://github.com/leesum1/RV64emu-rs")[#fa-icon("github") leesum1/RV64emu-rs],
-  date: [2018.12 - now],
+  date: [2022.12 - now],
   location: [RV64emu-rs 是用 rust 编写一个 riscv 的模拟器],
   description: list(
     [支持 RISCV64IMAC 指令集以及 MSUD 四种特权模式],
@@ -51,14 +41,14 @@
 #cvEntry(
   society: link("https://github.com/leesum1/FishCore")[FishCore],
   title: link("https://github.com/leesum1/FishCore")[#fa-icon("github") leesum1/FishCore],
-  date: [2018.12 - now],
+  date: [2023.6 - now],
   location: [FishCore 是一个用 Chisel 编写的 RISC-V 内核],
   description: list(
-    [支持 RISCV64IMAC 指令集以及 MSUD 四种特权模式],
-    [MMU 支持 SV39、SV48、SV57 多种转换模式],
-    [支持 TLB、ICache、DCache、以及 Decode Cache 加速运行],
-    [实现了 PLIC、CLINT、VGA、UART、等外设],
-    [实现了 RISCV Debug 扩展，支持使用 GDB 等工具进行程序调试],
-    [支持运行 Linux 等多种操作系统]
+    [支持RISCV64IMAC 指令集以及 MSU 三种特权模式（D 正在实现中）],
+    [- 7 级流水线，2 个发射端口， 2 个提交端口（顺序发射、乱序执行、顺序提交），拥有 LSU、 ALU 等多种执行单元],
+    [实现了 MMU ，支持 SV39 地址转换模式],
+    [实现了 iTLB、dTLB、 ICache、DCache 缓存系统],
+    [支持多级分支预测],
+    [实现了最小化 SOC（PLIC、Clint、Uart、 Mem），支持运行 Linux 等多种操作系统]
   ),
 )

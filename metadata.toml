@@ -30,7 +30,7 @@ language = "zh"
 
 [inject]
     # Decide if you want to inject AI prompt or not
-    inject_ai_prompt = true
+    inject_ai_prompt = false
 
     # Decide if you want to inject keywords or not
     inject_keywords = true
@@ -72,7 +72,7 @@ language = "zh"
     letter_footer = "Lettre de motivation"
 
 [lang.zh]
-    header_quote = "具有丰富经验的数据分析师，随时可入职"
+    header_quote = "自驱能力强, 善于学习新事务"
     cv_footer = "简历"
     letter_footer = "申请信"
 
