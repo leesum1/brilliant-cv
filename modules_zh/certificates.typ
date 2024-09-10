@@ -14,6 +14,13 @@
   location: [浙江-杭州],
 )
 
+#cvHonor(
+  date: [2024],
+  title: [华为嵌入式大赛-算法组],
+  issuer: [杭厦赛区复赛],
+  location: [浙江-杭州],
+)
+
 
 
 

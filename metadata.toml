@@ -72,7 +72,7 @@ language = "zh"
     letter_footer = "Lettre de motivation"
 
 [lang.zh]
-    header_quote = "自驱能力强, 善于学习新事务"
+    header_quote = "意向方向: 高性能体系结构RTL, 系统软件, 芯片BSP, 嵌入式"
     cv_footer = "简历"
     letter_footer = "申请信"
 
