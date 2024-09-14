@@ -13,7 +13,7 @@
 
 #cvSkill(
   type: [技术栈],
-  info: [芯片前端设计 #hBar() 嵌入式 BSP 开发 #hBar() 操作系统移植 #hBar() 软件开发],
+  info: [芯片前端设计 #hBar() 嵌入式 BSP 开发 #hBar() 操作系统移植 #hBar() 系统软件开发],
 )
 
 #cvSkill(

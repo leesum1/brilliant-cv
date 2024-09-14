@@ -48,7 +48,7 @@
   date: [2024.4.17],
   location: [This repository hosts unit tests for RISC-V processors.],
   description: list(
-    [修复了 riscv-tests 中 Debug 测试集中 GDB TEST 中的初始化程序错误],
+    [修复了 riscv-tests 中 Debug 测试集中 GDB TEST 中的初始化程序错误, 提高了测试集的兼容性],
   ),
 )
 

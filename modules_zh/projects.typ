@@ -29,12 +29,12 @@
   date: [2022.12 - now],
   location: [RV64emu-rs 是用 rust 编写一个 riscv 的模拟器],
   description: list(
-    [支持 RISCV64IMAC 指令集以及 MSUD 四种特权模式],
-    [MMU 支持 SV39、SV48、SV57 多种转换模式],
-    [支持 TLB、ICache、DCache、以及 Decode Cache 加速运行],
-    [实现了 PLIC、CLINT、VGA、UART、等外设],
-    [实现了 RISCV Debug 扩展，支持使用 GDB 等工具进行程序调试],
-    [支持运行 Linux 等多种操作系统]
+    [使用 RUST 语言编写了支持 RISCV64IMAC 指令集以及 MSUD 四种特权模式的模拟器],
+    [添加了 ICahce, DCache, TLB 以及 Decode Cache 加速程序运行],
+    [实现了一个完善的设备框架,  并且实现了 PLIC, CLINT, VGA, UART, KeyBoard, Mouse 等外设],
+    [成功移植 RT-Thread 操作系统, 并且运行 LVGL 等复杂应用；成功移植主线 Linux 并运行 Shell 程序],
+    [成功将该模拟器移植到ESP32-S3 上，并成功启动 Linux],
+    [按照 riscv-debug-specification 实现了 Debug 模式，能够使用 openOCD/GDB 通过 SimJTAG 连接到模拟器，进行寄存器读写、内存读写、单步执行、监视点、断点等调试操作]
   ),
 )
 
@@ -44,11 +44,11 @@
   date: [2023.6 - now],
   location: [FishCore 是一个用 Chisel 编写的 RISC-V 内核],
   description: list(
-    [支持RISCV64IMAC 指令集以及 MSU 三种特权模式（D 正在实现中）],
-    [- 7 级流水线，2 个发射端口， 2 个提交端口（顺序发射、乱序执行、顺序提交），拥有 LSU、 ALU 等多种执行单元],
-    [实现了 MMU ，支持 SV39 地址转换模式],
-    [实现了 iTLB、dTLB、 ICache、DCache 缓存系统],
-    [支持多级分支预测],
-    [实现了最小化 SOC（PLIC、Clint、Uart、 Mem），支持运行 Linux 等多种操作系统]
+    [使用 Chisel 实现了一个 RISCV64IMAC 指令集，支持 M, S, U, D 特权模式的处理器],
+    [实现了可配置的 ICache(VIPT) 和 DCache(PIPT), 以及全相连的 TLB 缓存加速处理器运行],
+    [在前端流水线实现了多级分支预测框架，确保分支预测的准确性。在后端实现了顺序双发射，以及指令的乱序执行调度],
+    [实现了 PLIC, CLINT, UART, MEM 等多种外设，并且通过 AXI4 总线进行互连搭建了一个最小 SOC 系统(FishSOC)，能够成功运行 Linux],
+    [按照 riscv-debug-specification 实现了 Debug 模式，能够使用 openOCD/GDB 通过 SimJTAG 连接到处理器，进行寄存器读写、内存读写、单步执行、监视点、断点等调试操作],
+    [在整个项目实践过程中，对 AXI4 总线，总线仲裁器，跨时钟域握手等内容均有涉及与实现]
   ),
 )
