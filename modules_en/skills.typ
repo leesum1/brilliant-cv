@@ -1,22 +1,15 @@
 // Imports
-#import "@preview/brilliant-cv:2.0.1": cvSection, cvSkill, hBar
+#import "@preview/brilliant-cv:2.0.2": cvSection, cvSkill, hBar
 #let metadata = toml("../metadata.toml")
 #let cvSection = cvSection.with(metadata: metadata)
 
 
 #cvSection("Skills")
 
-#cvSkill(
-  type: [Languages],
-  info: [English #hBar() French #hBar() Chinese],
-)
+#cvSkill(type: [Programming Languages], info: [Proficient in C/C++, Rust, Verilog/SystemVerilog, and Scala/Chisel, with the ability to develop across the entire stack from low-level hardware to high-level system software.])
 
-#cvSkill(
-  type: [Tech Stack],
-  info: [Tableau #hBar() Python (Pandas/Numpy) #hBar() PostgreSQL],
-)
+#cvSkill(type: [Embedded Development], info: [In-depth understanding of embedded systems development processes, with experience in BSP development; possess the capability for collaborative development from hardware to software.])
 
-#cvSkill(
-  type: [Personal Interests],
-  info: [Swimming #hBar() Cooking #hBar() Reading],
-)
+#cvSkill(type: [Chip Design], info: [Skilled in RTL design and verification, proficient in using Verilog and Chisel for processor core design and AXI bus integration.])
+
+#cvSkill(type: [Areas of Interest], info: [Passionate about processor design, hardware acceleration technologies, and embedded systems application development.])

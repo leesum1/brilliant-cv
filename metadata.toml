@@ -10,16 +10,20 @@ language = "zh"
     awesome_color = "skyblue"
 
     # Skips are for controlling the spacing between sections and entries
-    before_section_skip = "1pt"
-    before_entry_skip = "1pt"
-    before_entry_description_skip = "1pt"
+    before_section_skip = "0pt"
+    before_entry_skip = "0pt"
+    before_entry_description_skip = "0pt"
+
+    [layout.fonts]
+        regular_fonts = ["Source Sans Pro", "Source Sans 3"]
+        header_font = "Roboto"
 
     [layout.header]
         # Optional values: left, center, right
         header_align = "left"
 
         # Decide if you want to display profile photo or not
-        display_profile_photo = false
+        display_profile_photo = true
 
     [layout.entry]
         # Decide if you want to put your company in bold or your position in bold
@@ -37,8 +41,8 @@ language = "zh"
     injected_keywords_list = ["Data Analyst", "GCP", "Python", "SQL", "Tableau"]
 
 [personal]
-    first_name = "John"
-    last_name = "Doe"
+    first_name = "Lee"
+    last_name = "Sum"
 
     # The order of this section will affect how the entries are displayed
     # The custom value is for any additional information you want to add, name it as custom-1, custom-2, etc.
@@ -62,7 +66,7 @@ language = "zh"
 # i.e. [[lang.ru]]
 # each section must contains the following fields
 [lang.en]
-    header_quote = "Experienced Data Analyst looking for a full time job starting from now"
+    header_quote = "Preferred areas: High-performance architecture RTL, system software, chip BSP, embedded software."
     cv_footer = "Curriculum vitae"
     letter_footer = "Cover letter"
 
@@ -72,7 +76,7 @@ language = "zh"
     letter_footer = "Lettre de motivation"
 
 [lang.zh]
-    header_quote = "意向方向: 高性能体系结构RTL, 系统软件, 芯片BSP, 嵌入式"
+    header_quote = "意向方向: CPU前端设计、SOC系统软件"
     cv_footer = "简历"
     letter_footer = "申请信"
 

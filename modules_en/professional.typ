@@ -1,42 +1,36 @@
 // Imports
-#import "@preview/brilliant-cv:2.0.1": cvSection, cvEntry
+#import "@preview/brilliant-cv:2.0.2": cvSection, cvEntry, hBar
+#import "@preview/fontawesome:0.4.0": *
 #let metadata = toml("../metadata.toml")
 #let cvSection = cvSection.with(metadata: metadata)
 #let cvEntry = cvEntry.with(metadata: metadata)
 
-
 #cvSection("Professional Experience")
 
 #cvEntry(
-  title: [Director of Data Science],
-  society: [XYZ Corporation],
-  logo: image("../src/logos/xyz_corp.png"),
-  date: [2020 - Present],
-  location: [San Francisco, CA],
+  title: [One Student One Chip - Open Source Core Migration #hBar() ] + link("https://github.com/iEDA-Open-Source-Core-Project/iEDA-data-set")[#fa-icon("github") Repository Link],
+  society: [Beijing Open Source Chip Research Institute],
+  logo: image("../src/logos/bosc.png"),
+  date: [March 2023 - October 2023],
+  location: [Remote Internship],
   description: list(
-    [Lead a team of data scientists and analysts to develop and implement data-driven strategies, develop predictive models and algorithms to support decision-making across the organization],
-    [Collaborate with executive leadership to identify business opportunities and drive growth, implement best practices for data governance, quality, and security],
-  ),
-  tags: ("Tags Example here", "Dataiku", "Snowflake", "SparkSQL"),
-)
-
-#cvEntry(
-  title: [Data Analyst],
-  society: [ABC Company],
-  logo: image("../src/logos/abc_company.png"),
-  date: [2017 - 2020],
-  location: [New York, NY],
-  description: list(
-    [Analyze large datasets using SQL and Python, collaborate with cross-functional teams to identify business insights],
-    [Create data visualizations and dashboards using Tableau, develop and maintain data pipelines using AWS],
+    [Served as the leader of the Open Source Core Migration SIG group, responsible for task allocation and coordination.],
+    [Studied open-source processor design and modified the core bus to "AXI4," integrating it into the "One Student One Chip"
+      SOC simulation environment. Ported and tested software like BenchMark, RT-Thread in the simulation environment, and
+      packaged the core for other teams after passing all tests.],
+    [Completed the migration and testing of open-source cores such as DarkRiscv, Ibex, Hummingbird E203, CVA6, and gained
+      extensive knowledge of microarchitecture design and system software migration methods.],
   ),
 )
 
 #cvEntry(
-  title: [Data Analysis Intern],
-  society: [PQR Corporation],
-  logo: image("../src/logos/pqr_corp.png"),
-  date: [Summer 2017],
-  location: [Chicago, IL],
-  description: list([Assisted with data cleaning, processing, and analysis using Python and Excel, participated in team meetings and contributed to project planning and execution]),
+  title: [One Student One Chip - Teaching Assistant],
+  society: [Beijing Open Source Chip Research Institute],
+  logo: image("../src/logos/bosc.png"),
+  date: [November 2023 - now],
+  location: [Remote Internship],
+  description: list(
+    [Serving as a teaching assistant for the "One Student One Chip" project, responsible for daily Q&A, organizing group
+      meetings.],
+  ),
 )
