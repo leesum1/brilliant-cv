@@ -8,6 +8,7 @@ language = "zh"
     # Optional values: skyblue, red, nephritis, concrete, darknight
     # You can also use a custom color by hex code i.e. "#1E90FF"
     awesome_color = "skyblue"
+    # awesome_color = "#EC4923"
 
     # Skips are for controlling the spacing between sections and entries
     before_section_skip = "0pt"
@@ -76,7 +77,7 @@ language = "zh"
     letter_footer = "Lettre de motivation"
 
 [lang.zh]
-    header_quote = "意向方向: CPU前端设计、SOC系统软件"
+    header_quote = "意向方向: 数字逻辑设计、SOC系统软件"
     cv_footer = "简历"
     letter_footer = "申请信"
 
