@@ -16,7 +16,7 @@ language = "zh"
     before_entry_description_skip = "0pt"
 
     [layout.fonts]
-        regular_fonts = ["Source Sans Pro", "Source Sans 3"]
+        regular_fonts = ["Source Serif Pro", "Source Serif 4"]
         header_font = "Roboto"
 
     [layout.header]
@@ -85,4 +85,7 @@ language = "zh"
  # Currently supported non-latin language codes: ("zh", "ja", "ko", "ru")
 [lang.non_latin]
     name = "李子龙"
-    font = "Heiti SC"
+    # font = "Heiti SC"
+    # font = "Source Han Serif"
+    font = "Microsoft Sans Serif"
+    # font = "微軟正黑體"
