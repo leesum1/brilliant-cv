@@ -7,6 +7,19 @@
 
 #cvSection("实习经历")
 
+// #cvEntry(
+//   title: link("https://github.com/iEDA-Open-Source-Core-Project/iEDA-data-set")[#fa-icon("github") 开源核心移植成果仓库链接],
+//   society: [北京开源芯片研究院],
+//   logo: image("../src/logos/bosc.png"),
+//   date: [2023.3 - 2023.12],
+//   location: [一生一芯-开源核心移植项目组],
+//   description: list(
+//     [学习开源处理器设计，将其总线修改为 *AXI4* 并接入「yxys-SOC」仿真环境；为其移植 BenchMark、RT-Thread 等测试程序],
+//     [完成了 DarkRiscv、Ibex、蜂鸟E203、CVA6 等开源核心的移植与测试工作；掌握了各种*系统软件的移植*方式，能够理解并修改开源核心的 RTL 代码，以适应不同的 SOC环境，*熟练使用Verilog 或 Chisel
+//       语言*，能够*独立完成 RTL 设计与仿真工作*],
+//   ),
+// )
+
 #cvEntry(
   title: link("https://github.com/iEDA-Open-Source-Core-Project/iEDA-data-set")[#fa-icon("github") 开源核心移植成果仓库链接],
   society: [北京开源芯片研究院],
@@ -14,9 +27,8 @@
   date: [2023.3 - 2023.12],
   location: [一生一芯-开源核心移植项目组],
   description: list(
-    [学习开源处理器设计，将其总线修改为 *AXI4* 并接入「yxys-SOC」仿真环境；为其移植 BenchMark、RT-Thread 等测试程序],
-    [完成了 DarkRiscv、Ibex、蜂鸟E203、CVA6 等开源核心的移植与测试工作；掌握了各种*系统软件的移植*方式，能够理解并修改开源核心的 RTL 代码，以适应不同的 SOC环境，*熟练使用Verilog 或 Chisel
-      语言*，能够*独立完成 RTL 设计与仿真工作。*],
+    [*开源处理器 SOC 移植：* 深入学习开源处理器架构，将总线改为 AXI4 并接入「yxys‐SOC」仿真环境, 完成多个开源核心（例如 Ibex、蜂鸟E203、CVA6）的移植与测试工作。能够理解和修改 RTL 代码以适应不同的SOC环境。熟练使用 Verilog 和 Chisel 进行RTL设计与仿真，能够独立完成设计与验证工作],
+    [*测试程序移植与验证:* 编写和移植 SOC 测试程序，包括 BenchMark、RT-Thread 等，验证移植的开源核心的功能与性能],
   ),
 )
 
